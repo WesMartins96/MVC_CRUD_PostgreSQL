@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container mt-5">
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Bem-vindo ao <strong>Projeto MVC CRUD com PostgreSQL</strong></h1>
+        <p class="lead">Este é um exemplo de aplicação ASP.NET MVC utilizando PostgreSQL para operações CRUD.</p>
+        <hr class="my-4">
+        <br>
+        <p>Utilize o menu de navegação para gerenciar os produtos.</p>
+        <a class="btn btn-primary btn-lg" asp-controller="Produtos" asp-action="Index" role="button">Ver Produtos</a>
+        <a class="btn btn-success btn-lg" asp-controller="Produtos" asp-action="Create" role="button">Adicionar Produto</a>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Funcionalidades</h5>
+                    <p class="card-text">Veja, adicione, edite e exclua produtos com facilidade utilizando esta aplicação.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Tecnologias Utilizadas</h5>
+                    <p class="card-text">ASP.NET MVC, PostgreSQL, Bootstrap.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Sobre o Projeto</h5>
+                    <p class="card-text">Este projeto é um exemplo prático para demonstrar a integração entre ASP.NET MVC e PostgreSQL.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

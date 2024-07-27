@@ -1,0 +1,38 @@
+﻿@model MVC_CRUD_PostgreSQL.Models.Produto
+
+@{
+    ViewData["Title"] = "Deletar Produto";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h1 class="mb-4">@ViewData["Title"]</h1>
+
+            <h3 class="text-danger">Você tem certeza que deseja excluir este produto?</h3>
+
+            <div class="card mt-3">
+                <div class="card-header">
+                    <h4 class="card-title">Produto</h4>
+                </div>
+                <div class="card-body">
+                    <dl class="row">
+                        <dt class="col-sm-3">
+                            @Html.DisplayNameFor(model => model.Nome)
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.Nome)
+                        </dd>
+                    </dl>
+                </div>
+                <div class="card-footer">
+                    <form asp-action="Delete" class="d-inline">
+                        <input type="hidden" asp-for="Id" />
+                        <button type="submit" class="btn btn-danger">Deletar</button>
+                    </form>
+                    <a asp-action="Index" class="btn btn-secondary ml-2">Voltar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
